@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayLater Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Food Order</h1>
+            <p id="account">Please connect MetaMask</p>
+            <button id="connectButton">Connect MetaMask</button>
+        </header>
+        <main>
+            <div class="food-menu">
+                <h2>Select Your Meals</h2>
+                <div class="menu-item" data-price="0.5">
+                    <img src="https://sinfullyspicy.com/wp-content/uploads/2022/02/Tandoori-Mushroom-Pizza-Featured-Image.jpg" alt="Pizza">
+                    <h3>Pizza</h3>
+                    <p>$0.5</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item" data-price="0.3">
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2021/03/31/pork-burger.jpeg?w=724" alt="Burger">
+                    <h3>Burger</h3>
+                    <p>$0.3</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+                <div class="menu-item" data-price="0.2">
+                    <img src="https://cdn0-production-images-kly.akamaized.net/fQF0GRjQ1KK6j_So1VrHKjdlp54=/0x65:999x628/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3956687/original/098604000_1646790864-shutterstock_1724358589__1_.jpg" alt="Pasta">
+                    <h3>Pasta</h3>
+                    <p>$0.2</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+            <div id="totalAmount">
+                <h2>Total: $<span id="totalPrice">0</span></h2>
+                <button id="makePurchaseButton" disabled>Make Purchase</button>
+            </div>
+        </main>
+        <footer>
+            <p>Powered by Blockchain</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
